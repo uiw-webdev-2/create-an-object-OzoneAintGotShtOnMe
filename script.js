@@ -17,6 +17,24 @@ const backpack = {
   },
 };
 
+const song = {
+  name: "Forever Always",
+  length: {
+  minutes: 3.5,
+  seconds: 210,
+  },
+  genre: "hip-hop",
+  features: 4,
+  isPlaying: false,
+  toggleSong: function (playSong) {
+    this.isPlaying = playSong;
+  },
+  newSongLength: function (minute, secondo) {
+    this.length.minutes = minute;
+    this.length.seconds = secondo;
+  },
+};
+
 console.log("The backpack object:", backpack);
 console.log("The pocketNum value:", backpack.pocketNum);
 
